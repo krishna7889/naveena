@@ -1,0 +1,49 @@
+<form [formGroup]="corporateFormGroup" class="form-corporate">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="form-group">
+        <ng-select [items]="customers" bindLabel="name" formControlName="name" placeholder="Customer Number/Name">
+        </ng-select>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+      <div class="form-group">
+        <ng-select [items]="siteNames" bindLabel="name" formControlName="siteName" placeholder="Site Name"> </ng-select>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+      <div class="form-group">
+        <ng-select [items]="contacts" bindLabel="name" formControlName="contactName" placeholder="Contact Name">
+        </ng-select>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+      <div class="form-group">
+        <ng-select [items]="statuses" bindLabel="name" formControlName="status" placeholder="Status"> </ng-select>
+      </div>
+    </div>
+
+    <div class="col-md-1">
+      <div class="form-group">
+        <ng-select [items]="priorities" bindLabel="name" formControlName="priority" placeholder="Priority"> </ng-select>
+      </div>
+    </div>
+
+    <div class="col-md-1">
+      <div class="form-group">
+        <ng-select [items]="severities" bindLabel="name" formControlName="severity" placeholder="Severity"> </ng-select>
+      </div>
+    </div>
+
+    <div class="col-md-1">
+      <div class="form-group">
+        <button type="button" class="btn btn-primary">
+          <div class="btn-wrapper d-flex align-items-center">Go <i class="fa ft-arrow-right-circle ml-1"></i></div>
+        </button>
+      </div>
+    </div>
+  </div>
+</form>
